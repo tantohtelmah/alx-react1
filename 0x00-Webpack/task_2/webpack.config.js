@@ -14,11 +14,8 @@ module.exports = {
   ],
   optimization: {
     minimizer: [
-        new ImageMinimizerPlugin({
-            minimizer: [
-              'imagemin-mozjpeg',
-            ],
-        }),
+      new ImageMinimizerPlugin({minimizer: [{implementation: require('imagemin-mozjpeg'),},],
+      }),
     ],
   },
 };

@@ -1,0 +1,14 @@
+/* footer.css */
+/* Define your footer styles here */
+footer {
+	background-color: #333;
+	color: #fff;
+	padding: 10px;
+	text-align: center;
+  }
+  
+  p {
+	font-size: 14px;
+	margin: 5px 0;
+  }
+  
