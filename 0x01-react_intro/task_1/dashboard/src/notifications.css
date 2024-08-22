@@ -1,0 +1,10 @@
+
+.Notifications {
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+.Notifications {
+    border: 1px solid #ccc; /* Add a border */
+    padding: 10px; /* Add some padding */
+}
