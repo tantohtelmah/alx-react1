@@ -2,17 +2,17 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
+  mode: 'production', // Set mode to production
   entry: './js/dashboard_main.js',
   output: {
-    filename: 'bundle.js',
-    path: path.resolve(__dirname, 'public'),
-    clean: true,
+    filename: 'bundle.js', // Name the output file bundle.js
+    path: path.resolve(__dirname, 'public'), // Output to the public folder
+    clean: true, // Clean the output directory before emit
   },
-  mode: 'production',
   module: {
     rules: [
       {
-        test: /\.css$/i,
+        test: /\.css$/,
         use: ['style-loader', 'css-loader'],
       },
       {
@@ -32,8 +32,9 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: './public/index.html',
-      filename: 'index.html',
+      template: './public/index.html', // Use your existing index.html as a template
+      filename: 'index.html', // Output file name
+      inject: 'body', // Inject all assets into the body
     }),
   ],
   performance: {
