@@ -12,10 +12,12 @@ function addParagraphs() {
 addParagraphs();
 
 $(document).ready(function (){
-	function updateCounter(){
-		let count = 0;
-		$('#count').text(`${count} clicks on the button`)
-	}
+	 // Function to update the counter
+	 let count = 0;
+	 function updateCounter() {
+		 count++;
+		 $('#count').text(`${count} clicks on the button`);
+	 }
 	
 	const debounceUpdateCounter = debounce(updateCounter, 500);
 	
