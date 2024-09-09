@@ -1,4 +1,3 @@
-const HtmlWebpackPlugin = require('html-webpack-plugin');
 const path = require('path');
 
 module.exports = {
@@ -8,7 +7,4 @@ module.exports = {
     path: path.resolve(__dirname, 'public'), // Output directory
   },
   mode: 'production', // Set mode to production
-  plugins: [
-    new HtmlWebpackPlugin({template: './public/index.html',}), // Add this line
-  ],
 };
