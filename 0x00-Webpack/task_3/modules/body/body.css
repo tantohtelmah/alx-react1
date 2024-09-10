@@ -1,9 +1,15 @@
-/* body.css */
-button {
-	background-color: #0074d9;
-	color: #ffffff;
+#body {
+	padding: 20px;
+	text-align: center;
+  }
+  
+  #counter {
 	padding: 10px 20px;
-	border: none;
-	cursor: pointer;
+	font-size: 16px;
+  }
+  
+  #count {
+	font-size: 20px;
+	margin-top: 10px;
   }
   

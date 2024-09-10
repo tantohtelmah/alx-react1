@@ -1,17 +1,13 @@
-// body.js
-import $ from 'jquery'; // Import jQuery
-import _ from 'lodash'; // Import Lodash
+import $ from 'jquery';
+import _ from 'lodash';
+import './body.css';
 
-// Create a button and counter
-const button = document.createElement('button');
-button.textContent = 'Click me';
-let counter = 0;
+$(document).ready(function() {
+  $('body').append('<div id="body"><button id="counter">Click me</button><p id="count">0 clicks on the button</p></div>');
 
-// Attach event listener to the button
-button.addEventListener('click', () => {
-  counter++;
-  console.log(`Button clicked! Counter: ${counter}`);
+  let count = 0;
+  $('#counter').on('click', _.debounce(function() {
+    count++;
+    $('#count').text(count);
+  }, 300));
 });
-
-// Append button to the body
-document.body.appendChild(button);

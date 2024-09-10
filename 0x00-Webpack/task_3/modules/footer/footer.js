@@ -1,10 +1,6 @@
-// footer.js
-import $ from 'jquery'; // Import jQuery (make sure it's installed)
+import $ from 'jquery';
+import './footer.css';
 
-// Create a paragraph for the copyright text
-const copyrightText = document.createElement('p');
-copyrightText.textContent = 'Copyright - Holberton School';
-
-// Append the paragraph to the footer
-const footer = document.querySelector('footer'); // Adjust the selector as needed
-footer.appendChild(copyrightText);
+$(document).ready(function() {
+  $('body').append('<div id="footer"><p>Copyright - Holberton School</p></div>');
+});
