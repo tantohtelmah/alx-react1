@@ -8,5 +8,8 @@
   "scripts": {
     "deploy": "npm run build && gh-pages -d build",
     "build": "webpack --config webpack.config.js"
+  },
+  "dependencies": {
+    "aphrodite": "^2.4.0"
   }
 }
